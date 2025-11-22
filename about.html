@@ -288,35 +288,29 @@ header{
     width: 70%;
     margin: 20px auto;
 }
+
     </style>
 </head>
 <body>
     <div class="container">
         <header class="animated">
-            <a href="" class="logo">Esperonce</a>
+            <a href="" class="logo">About Me</a>
 
             <nav class="navbar">
-                <a href="" class="menu"><i class="ri-menu-line"></i></a>
-                <a href="" class="active">Home</a>
-                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="" class="active">About</a>
                 <a href="services.html">Skills</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
 
-        <section class="home animated">
-            <div class="home-detail">
-                <h1>Gian kenneth Esperonce</h1>
-                <h2>Video editor</h2>
+        <section class="about home animated">
+            <div class="about home-detail">
+                <h1>Hello World! I'm <span>Gian</span></h1>
+                <h2>I Love <span class="auto-type"></span></h2>
                 <p>I’m a video editor with a passion for transforming raw footage into compelling visual stories. I specialize in editing short-form content, social media videos, and cinematic sequences, focusing on clean cuts, smooth pacing, and strong storytelling.</p>
-                <div class="download-social">
-                    <a href="" class="btn">Download CV</a>
-                    <div class="social-icons">
-                        <a href=""><i class="ri-github-fill"></i></a>
-                        <a href=""><i class="ri-linkedin-fill"></i></a>
-                        <a href="https://web.facebook.com/giankenneth.esperonse"><i class="ri-facebook-circle-fill"></i></a>
-                        <a href=""><i class="ri-twitter-x-fill"></i></a>
-                    </div>
+                <div class="button">
+                    <button>Read More</button>
                 </div>
             </div>
             <div class="home-img">
@@ -326,5 +320,16 @@ header{
             </div>
         </section>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Editing", "Programming", "You"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            looped : true
+        });
+    </script>
 </body>
 </html>
