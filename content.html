@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #ffc7de;
+        }
+        .container{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .title{
+            margin: 20px auto;
+            text-align: center;
+        }
+        .title h1{
+            color: #e64b7f;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .boxes{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 20%;
+            text-align: center;
+            margin: 10px auto;
+        }
+        .boxes .box{
+            width: 100%;
+            padding: 20px;
+            background-color: #d198b0;
+            margin: 20px auto;
+            border-width:4px;
+            border-style: solid;
+            border-image: linear-gradient(45deg, #fd7979,#d128e0) 1;
+            cursor: pointer;
+        }
+        img{
+            width: 100px;
+            border-radius: 10px;
+        }
+        @media(max-width:768px){
+            h1{
+                font-size: 20px;
+            }
+            img{
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>For my Pretty wifey</h1>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <a href="images.html">
+                    <img src="images/camera.jpg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <a href="letter.html">
+                    <img src="images/letter.jpg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <a href="music.html">
+                    <img src="images/music.jpg" alt="">
+                </a>
+            </div>
+            <div class="box">
+                <a href="flowers.html">
+                    <img src="images/rose.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

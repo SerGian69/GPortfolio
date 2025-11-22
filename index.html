@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonthSaryWebsite</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: linear-gradient(30deg, #ff7e93,#f3afba);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            text-align: center;
+        }
+        .box{
+            max-width: 100%;
+            width: 50%;
+            background-color: #fff;
+            border: solid 2px #e44776;
+            box-shadow: 0 0 10px #ff7e93;
+            padding: 35px;
+            border-radius: 10px;
+        }
+        .box h1{
+            color: #ff7e93;
+        }
+        .box .buttons{
+            justify-content: space-between;
+            margin: 40px auto;
+        }
+        button{
+            border: solid 2px #e44776;
+            background-color: #f3afba;
+            padding: 10px 30px;
+            font-size: 12px;
+            margin: 0 20px;
+            text-align: center;
+            border-radius: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        @media(max-width:768px){
+            h1{
+                font-size: 20px;
+            }
+            .buttons{
+                display: flex;
+            }
+            button{
+                padding: 5px 15px;
+                margin: 5px;
+            }
+            #repelBtn{
+                margin-left:35%;
+            }
+        }
+        .heart{
+            position: relative;
+            text-align: center;
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: heartbeat 1s infinite ease-in-out;
+        }
+        .heart::before, .heart::after{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before{
+            top: -50px;
+            left: 0;
+        }
+        .heart::after{
+            top: 0;
+            left: 50;
+        }
+        @keyframes heartbeat {
+            0%, 100%{
+                transform: scale(1) rotate(-45deg);
+            }
+            50%{
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+        .pulse{
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            background: rgba(255,0,0,0.5);
+            border-radius: 50%;
+            top: -10px;
+            left: -10px;
+            animation: pulseEffect 1.5s infinite;
+        }
+        @keyframes pulseEffect{
+            0%{
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50%{
+                transform: scale(1.5);
+                opacity: 0;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Would you like me to escort you in your entire life?</h1>
+
+            <div class="heart">
+                <div class="pulse"></div>
+            </div>
+            
+            <div class="buttons">
+                <button><a href="content.html">Yes</a></button>
+                <button id="repelBtn" style="position: absolute" onmouseover="this.style.right = Math.random()*90+ 'vw';
+                this.style.top = Math.random()*90+'vh'">No</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
